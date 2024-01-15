@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Horarios</h2>
+      <form action="/" method="post" onsubmit="submitForm(event)">
+        <div class="formInputs">
+          <div class="timeGird">
+            <h4>Entrada</h4>
+            <input type="time" name="entry-1" id="entry-1" class="entry" />
+            <input type="time" name="entry-2" id="entry-2" class="entry" />
+            <input type="time" name="entry-3" id="entry-3" class="entry" />
+            <input type="time" name="entry-4" id="entry-4" class="entry" />
+            <input type="time" name="entry-5" id="entry-5" class="entry" />
+            <input type="time" name="entry-6" id="entry-6" class="entry" />
+            <input type="time" name="entry-7" id="entry-7" class="entry" />
+            <input type="time" name="entry-8" id="entry-8" class="entry" />
+            <input type="time" name="entry-9" id="entry-9" class="entry" />
+            <input type="time" name="entry-10" id="entry-10" class="entry" />
+          </div>
+        </div>
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <div class="result">
+        <h3>Respostas</h3>
+        <div class="answerItem">
+          <span>Período de maior acesso: </span
+          ><span id="moreAcess" class="answer"></span>
+        </div>
+        <div class="answerItem">
+          <span>Acessos manhã: </span><span id="morning" class="answer"></span>
+        </div>
+        <div class="answerItem">
+          <span>Acessos tarde: </span
+          ><span id="afternoon" class="answer"></span>
+        </div>
+        <div class="answerItem">
+          <span>Acessos noite: </span><span id="evening" class="answer"></span>
+        </div>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
